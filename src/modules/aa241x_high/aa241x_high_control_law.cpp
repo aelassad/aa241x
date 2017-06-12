@@ -271,7 +271,7 @@ void flight_control() {
             } else {
                 mazController.SetPos(position_N, position_E);
                 //Test if we missed target
-                /*
+                
                 if ( (position_N - target_list[target_idx].pos_N)*(target_list[target_idx].pos_N - target_list[target_idx-1].pos_N) + \
                      (position_E - target_list[target_idx].pos_E)*(target_list[target_idx].pos_E - target_list[target_idx-1].pos_E)  > 0.0f ) { //we missed target, skip it
                 	target_idx ++;
@@ -291,7 +291,7 @@ void flight_control() {
                     	current_command = 0;
                     }
                 }
-                */
+                
             }
         }
     } else {
